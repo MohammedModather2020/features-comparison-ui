@@ -1,0 +1,42 @@
+/* 
+* Challenge Name    : عمل تصميم مقارنة المميزات
+* Start Date        : 13-2-2022
+* Last Update       : 
+* End Date          : 
+* Contact Us        : mohammedmodather144@gmail.com
+* Git Hub url       : https://github.com/MohammedModather2020
+*/
+/* 
+* 1- General Style
+   1.0- Universal Element
+   1.1- Body Style
+* 2- Section Style
+   2.0-
+* 3- Common Style 
+   3.0- Container Section
+*/
+/** 1- General Style */
+/**  1.0- Universal Element */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/** 1.1- Body Style */
+body{
+  font-family: 'Cairo', sans-serif;
+  background-color: #EEEEEE;
+}
+/** 2- Section Style */
+/**  2.0- */
+
+
+
+/**3- Common Style  */
+/** 3.0- Container Section */
+.container{
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 1rem;
+}

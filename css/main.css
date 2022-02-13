@@ -1,8 +1,8 @@
 /* 
 * Challenge Name    : عمل تصميم مقارنة المميزات
 * Start Date        : 13-2-2022
-* Last Update       : 
-* End Date          : 
+* Last Update       : 13-2-2022
+* End Date          : 13-2-2022
 * Contact Us        : mohammedmodather144@gmail.com
 * Git Hub url       : https://github.com/MohammedModather2020
 */
@@ -11,9 +11,11 @@
    1.0- Universal Element
    1.1- Body Style
 * 2- Section Style
-   2.0-
+   2.0- Features
 * 3- Common Style 
    3.0- Container Section
+   3.1- Font Family
+   3.2- Draw Icon
 */
 /** 1- General Style */
 /**  1.0- Universal Element */
@@ -24,12 +26,67 @@
 }
 /** 1.1- Body Style */
 body{
-  font-family: 'Cairo', sans-serif;
-  background-color: #EEEEEE;
+  font-family: 'DroidKufi-Regular', sans-serif;
+  background-color: #F6F6F6;
 }
 /** 2- Section Style */
-/**  2.0- */
-
+/**  2.0- Features */
+.features .icon-save{
+  margin-left: auto;
+  background-color: #2196F3;
+  width: 140px;
+  text-align: center;
+  line-height: 0;
+  color: #FFF;
+  border-width: 23px 23px 23px 0px;
+  border-style: solid;
+  border-color: transparent #F6F6F6;
+  height: 40px;
+}
+.features .wrapper{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+.features .wrapper .feature{
+  background-color: #FFF;
+  border-start-start-radius: .5rem;
+  border-start-end-radius: .5rem;
+}
+.features .wrapper .feature header{
+  color: #FFF;
+  padding: .6rem;
+  border-start-start-radius: .5rem;
+  border-start-end-radius: .5rem;
+}
+.features .wrapper .feature:first-of-type header{
+  background-color: #F44336;
+}
+.features .wrapper .feature:last-of-type header{
+  background-color: #2196F3;
+}
+.features .wrapper .feature header .title{
+  font-size: 1rem;
+  font-family: 'DroidKufi-Bold';
+  font-weight: normal;
+}
+.features .wrapper .feature .feature-list{
+  list-style: none;
+  padding-block: .8rem;
+}
+.features .wrapper .feature .feature-list li{
+  position: relative;
+  font-size: .9rem;
+  color: #333;
+  padding-inline: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  padding-block: .5rem;
+}
+.features .wrapper .feature .feature-list li:not(:last-of-type){
+  border-bottom: 1px solid #F7F7F7;
+}
 
 
 /**3- Common Style  */
@@ -37,6 +94,93 @@ body{
 .container{
   width: 80%;
   margin: auto;
-  background-color: #ffffff;
   padding: 1rem;
+}
+/** 3.1- Font Family */
+@font-face {
+  font-family: 'DroidKufi-Bold';
+  src: url(../fonts/DroidKufi-Bold.ttf);
+}
+@font-face {
+  font-family: 'DroidKufi-Regular';
+  src: url(../fonts/DroidKufi-Regular.ttf);
+}
+/** 3.2- Draw Icon */
+.icon{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  margin-inline-end: .5rem;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.tick-mark{
+  background-color: #09998C;
+}
+.tick-mark::before {
+  position: absolute;
+  left: 0;
+  top: 53%;
+  height: 25%;
+  width: 2px;
+  background-color: #FFF;
+  content: "";
+  transform: translateX(7px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+.tick-mark::after {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  height: 2px;
+  width: 62%;
+  background-color: #FFF;
+  content: "";
+  transform: translateX(8px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+.tick-cross{
+  background-color: #EC3B77;
+}
+.tick-cross::before{
+  position: absolute;
+  background-color: #FFF;
+  left: 0;
+  content: "";
+  width: 11px;
+  height: 2px;
+  transform: translateX(4px) rotate(45deg);
+  top: 9px;
+}
+.tick-cross::after{
+  position: absolute;
+  background-color: #FFF;
+  left: 0;
+  content: "";
+  width: 2px;
+  height: 10px;
+  transform: translateX(9px) rotate(45deg);
+  bottom: 5px;
+}
+.icon-question{
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  background-color: #888482;
+  color: #FFF;
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }

@@ -1,0 +1,23 @@
+@media screen and (max-width:567px) {
+  .container{
+    width: 100%;
+    padding-inline: .5rem;
+  }
+  .features .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features .wrapper .feature{
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+  .features .wrapper .feature:first-of-type{
+    order: 2;
+  }
+  .features .wrapper .feature:last-of-type{
+    order: 1;
+  }
+  .features .wrapper .feature .feature-list li{
+    padding-inline: .5rem;
+  }
+}
